@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>HexDecTool</h1>
+        <h1>Zahlerkonverter</h1>
         <div class="converter">
             <div>
                 <!--Hex zu Dezimal-->
@@ -26,14 +26,17 @@
             </div>
         </div> 
         <div class="ergebnis">
-            <!-- output-->
+               <!-- output-->
             <p id="hexResult"></p>
             <p id="decResult"></p>    
         </div>
-
-        <!--Zurük Klicken-->
-        <button onclick="goBack()">ZURÜCK</button>
     </div>
+                <!--Zurük -->
+    <button onclick="goBack()" class="zurük-klick">ZURÜK</button>
+
+    <!--Alert-->
+    <div id="notification" class="notification"></div>
+
     <script src="main.js"></script>
 </body>
 </html>

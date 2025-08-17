@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Zahl Rechner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>HexDecTool</h1>
+        <div class="converter">
+            <div>
+                <!--Hex zu Dezimal-->
+                <label>Deziemalzahl eingeben :</label>
+                <input type="number" id="decimal">
+                <button onclick="decimalToHex()">In Hex  umwandeln</button>
+                
+            </div>
+            <div>
+                <!--Hex zu Dezimal-->
+                <label> Hexadezimalzahl eingeben :</label>
+                <input type="text" id="hex" oninput="this.value = this.value.toUpperCase()">
+                <button onclick="hexToDecimal()">In Dezimal umwandeln</button>
+               
+            </div>
+        </div> 
+        <div class="ergebnis">
+               <!-- output-->
+            <p id="hexResult"></p>
+            <p id="decResult"></p>    
+        </div>
+    </div>
+</body>
+</html>
